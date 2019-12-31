@@ -6,6 +6,8 @@ Picogreen DNA quantification protocol is a method to quantify DNA in samples. DN
 
 I made this repository as it was annoying to do it by hand every time on excel. Saves time and why not make it as a personal project in using pandas and excel manipulations. The notebook accounts for the plate layout including triple copy of the Standard DNA curve and the DNA sample slots. (3 wells per sample/DNA curve). Currently the notebook requires that the plate layout file and the results sheet to be on the same directory, will be improved later.
 
+Some excel data is included in repository, however all irrelevant information in them was removed for potential privacy concerns.
+
 ## How to use
 1. Put the jupyter notebook and two separate excel files (one generated from TECAN Spark reader for Picogreen and the protocol plate layout) into the same directory/ folder.
 > Example of plate layout is shown below and on the repository. Position of standard DNA curve chosen arbitrarily
