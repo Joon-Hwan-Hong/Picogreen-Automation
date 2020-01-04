@@ -10,7 +10,7 @@ Some excel data is included in repository, however all irrelevant information in
 
 ## How to use
 1. Put the jupyter notebook and two separate excel files (one generated from TECAN Spark reader for Picogreen and the protocol plate layout) into the same directory/ folder.
-> Example of plate layout is shown below and on the repository. Position of standard DNA curve chosen arbitrarily
+> Example of plate layout is shown below and on the repository. Position of standard DNA curve chosen arbitrarily. The names on cells can be customized to the experimenter's choice for the report generation.
 > ![alt text](Layout_Example.png "Layout_Example")
 4. Go to <<Misc. and Settings>> to change parameters (need to change the name of layout and tecan excel file) 
 3. Click "Cell" on the Menu bar, then click "Run All"
@@ -22,7 +22,7 @@ The notebook achieves the following:
 2. Determine the average value for each DNA sample
 3. Determine the concentration for each DNA sample
 4. Visualize the data obtained
-5. Create a new summarized excel sheet containing all the data, and maybe inclue metadata from the results sheet as well, visualizations in one nice excel file with multiple sheets (Partial)
+5. Create a new summarized excel sheet containing all the data
 6. Detect extreme/ "odd recordings" and exclude from calculations (TBD)
 
 If there are any questions on the code, feel free to [email me](mailto:joon.hong@mail.mcgill.ca)
