@@ -1,8 +1,6 @@
 # Picogreen DNA Quantification Analysis Automation
 #### [By Joon Hwan Hong](https://github.com/Joon-Hwan-Hong "My Github Page!")
 
-## NOTE: Currently, a JavaFX GUI is being developed. The independent .ipynb is in the sample data folder if one chooses to use it.
-
 ## Introduction
 Picogreen DNA quantification protocol is a method to quantify DNA in samples. DNA samples were obtained from post-mortem human brain tissue at the Douglas Mental Health University Institute. Samples were diluted and placed into 96-well plates, which was quantified in the TECAN Spark reader using a modified PicoGreen protocol.
 
@@ -10,11 +8,22 @@ I made this repository as it was annoying to do it by hand every time on excel. 
 
 Some excel data is included in repository (/Sample Data), however all irrelevant information in them was removed for potential privacy concerns.
 
-## How to use
+## How to use (GUI method):
+1. Download/clone project and Run \\GUI\\src\\Main.java
+> Example of how to use
+> ![alt text](How2Use.gif "How2Use example")
+2. Click ***1. Select files and Generate Report***. Select the experimental data sheet from the TECAN Spark reader first, then select the protocol plate layout.
+> Example of plate layout is shown below and on the repository. Position of standard DNA curve chosen arbitrarily. The names on cells can be customized to the experimenter's choice for the report generation.
+> ![alt text](Layout_Example.png "Layout_Example")
+3. Then click generate report, wait a few seconds for the report to be generated, then click ***2. Select and Open .xlsx*** to open up the generated report.
+
+
+
+## How to use (.ipynb method \[not maintained\]):
 1. Put the jupyter notebook and two separate excel files (one generated from TECAN Spark reader for Picogreen and the protocol plate layout) into the same directory/ folder.
 > Example of plate layout is shown below and on the repository. Position of standard DNA curve chosen arbitrarily. The names on cells can be customized to the experimenter's choice for the report generation.
 > ![alt text](Layout_Example.png "Layout_Example")
-4. Go to <<Misc. and Settings>> to change parameters (need to change the name of layout and tecan excel file) 
+2. Go to <<Misc. and Settings>> to change parameters (need to change the name of layout and tecan excel file) 
 3. Click "Cell" on the Menu bar, then click "Run All"
 4. The report should be generated in the same directory / folder
 
