@@ -1,15 +1,15 @@
 .root{
-    -fx-background-color: #383838;
+    -fx-background-color: "#383838";
 }
 .label{
-    -fx-text-fill: aliceblue;
-    -fx-font-weight: bold;
+    -fx-text-fill: "aliceblue";
+    -fx-font-weight: "bold";
 }
 .button{
-    -fx-background-color: #AB4642;
-    -fx-text-fill: aliceblue ;
+    -fx-background-color: "#AB4642";
+    -fx-text-fill: "aliceblue" ;
 }
 .button_git{
-    -fx-background-color: #7CAFC2;
-    -fx-background-radius: 10;
+    -fx-background-color: "#7CAFC2";
+    -fx-background-radius: "10";
 }
