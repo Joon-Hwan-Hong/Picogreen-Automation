@@ -9,7 +9,9 @@ import javafx.stage.FileChooser;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+import java.awt.*;
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
@@ -58,10 +60,15 @@ public class Main extends Application {
         button_excel = new Button("2. Select and Open the .xlsx report");
         button_excel.setDisable(true);
         button_excel.setOnAction(actionEvent -> {
-            FileChooser fc = new FileChooser();
-            fc.setInitialDirectory(
-                    new File(Paths.get(".").toAbsolutePath().normalize().toString()));
-            fc.showOpenDialog(primaryStage);
+            try {
+                FileChooser fc = new FileChooser();
+                fc.setInitialDirectory(
+                        new File(Paths.get(".").toAbsolutePath().normalize().toString()));
+                File excel_file =  fc.showOpenDialog(primaryStage);
+                Desktop.getDesktop().open(excel_file);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
 
         // Button for alertbox
